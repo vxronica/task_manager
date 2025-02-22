@@ -36,26 +36,37 @@
             </div>
         </div>
     </nav>
-
     <!-- Task Creation Form -->
     <div class="container my-5">
-        <h2 class="mb-4">Create New Task</h2>
-        <form>
-            <div class="mb-3">
-                <label for="taskTitle" class="form-label">Task Title</label>
-                <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title">
-            </div>
-            <div class="mb-3">
-                <label for="taskDescription" class="form-label">Task Description</label>
-                <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="taskDueDate" class="form-label">Due Date</label>
-                <input type="date" class="form-control" id="taskDueDate">
-            </div>
-            <button type="submit" class="btn btn-primary">Create Task</button>
-        </form>
+    <h2 class="mb-4">Create New Task</h2>
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="taskTitle" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title">
+                </div>
+                <div class="mb-3">
+                    <label for="taskDescription" class="form-label">Task Description</label>
+                    <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="taskPriority" class="form-label">Priority</label>
+                    <select class="form-select" id="taskPriority">
+                        <option selected>Select priority</option>
+                        <option value="1">High</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Low</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="taskDueDate" class="form-label">Due Date</label>
+                    <input type="date" class="form-control" id="taskDueDate">
+                </div>
+                <button type="submit" class="btn btn-primary">Create Task</button>
+            </form>
+        </div>
     </div>
-
+</div>
 </body>
 </html>
